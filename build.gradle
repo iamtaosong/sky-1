@@ -1,0 +1,53 @@
+apply plugin: "groovy"
+apply plugin: "idea"
+
+
+version = '1.0'
+
+
+repositories {
+
+    mavenCentral()
+}
+
+dependencies {
+    groovy "org.codehaus.groovy:groovy-all:2.3.2"
+
+
+    compile 'org.apache.mina:mina-core:2.0.7'
+
+
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+
+    testRuntime "cglib:cglib-nodep:3.1"
+    testRuntime "org.objenesis:objenesis:1.2"
+
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "1.2"
+}
+
+sourceSets {
+    main {
+        groovy {
+            srcDir 'src/main/groovy'
+        }
+    }
+    test {
+        groovy {
+            srcDir 'src/test/groovy'
+        }
+    }
+}
+
+
+task runScript (dependsOn: 'classes', type: JavaExec) {
+    main = 'demo'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+
+
+

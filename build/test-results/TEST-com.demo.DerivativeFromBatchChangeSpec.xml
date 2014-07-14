@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.demo.DerivativeFromBatchChangeSpec" tests="5" skipped="0" failures="0" errors="0" timestamp="2014-07-14T00:02:30" hostname="taos-mbp" time="0.159">
+  <properties/>
+  <testcase name="check  a failure log" classname="com.demo.DerivativeFromBatchChangeSpec" time="0.115"/>
+  <testcase name="get ip from log line" classname="com.demo.DerivativeFromBatchChangeSpec" time="0.001"/>
+  <testcase name="check a new ip" classname="com.demo.DerivativeFromBatchChangeSpec" time="0.003"/>
+  <testcase name="check a  ip with 3 value " classname="com.demo.DerivativeFromBatchChangeSpec" time="0.037"/>
+  <testcase name="check a  ip with 4 value " classname="com.demo.DerivativeFromBatchChangeSpec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

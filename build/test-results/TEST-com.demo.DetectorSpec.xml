@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" hostname="taos-MacBook-Pro.local" name="com.demo.DetectorSpec" tests="6" time="2.611" timestamp="2014-07-14T08:21:34">
+  <properties />
+  <testcase classname="com.demo.DetectorSpec" name="As a dev, I want to check  isFailurelog return correct value" time="0.119" />
+  <testcase classname="com.demo.DetectorSpec" name="As a dev, I want to check getIpFromLine return correct ip" time="0.001" />
+  <testcase classname="com.demo.DetectorSpec" name="As a dev, I want to check parseLine do not return ip for the first time" time="0.005" />
+  <testcase classname="com.demo.DetectorSpec" name="As a dev, I want to check parseLine do not return ip when the value is not 4" time="0.045" />
+  <testcase classname="com.demo.DetectorSpec" name=" As a dev, I want to check parseLine do return ip when the value is  4 within live time" time="0.001" />
+  <testcase classname="com.demo.DetectorSpec" name="given 2 secs time to live, read a failure log, I expect not ip return  " time="2.003" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
