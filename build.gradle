@@ -39,11 +39,4 @@ sourceSets {
 }
 
 
-task runScript (dependsOn: 'classes', type: JavaExec) {
-    main = 'demo'
-    classpath = sourceSets.main.runtimeClasspath
-}
-
-
-
 
